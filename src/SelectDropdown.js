@@ -26,6 +26,7 @@ const SelectDropdown = (
     onFocus /* function  */,
     onBlur /* function  */,
     onScrollEndReached /* function  */,
+    ListEmptyComponent,
     /////////////////////////////
     buttonStyle /* style object for button */,
     buttonTextStyle /* style object for button text */,
@@ -184,6 +185,7 @@ const SelectDropdown = (
               onEndReached={() => onScrollEndReached && onScrollEndReached()}
               onEndReachedThreshold={0.5}
               showsVerticalScrollIndicator={showsVerticalScrollIndicator}
+              ListEmptyComponent={ListEmptyComponent}
             />
           </DropdownWindow>
         </DropdownModal>
